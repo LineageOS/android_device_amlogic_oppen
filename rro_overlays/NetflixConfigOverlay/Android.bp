@@ -7,6 +7,5 @@ runtime_resource_overlay {
     name: "NetflixConfigOverlayTarget",
     theme: "NetflixConfigOverlay",
     resource_dirs: ["res"],
-    sdk_version: "current",
     soc_specific: true,
 }
