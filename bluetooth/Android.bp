@@ -1,4 +1,0 @@
-filegroup {
-    name: "vnd_deadpool.txt",
-    srcs: ["vnd_deadpool.txt"],
-}
