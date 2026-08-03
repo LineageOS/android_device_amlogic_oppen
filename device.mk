@@ -4,35 +4,34 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-## Bluetooth
-PRODUCT_PACKAGES += \
-    DeadpoolBluetoothOverlay \
-    libbt-vendor
-
-$(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
-$(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_deadpool.txt)
-
-## Bluetooth firmware
-include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
-
 ## Init-Files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
 
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
+    $(LOCAL_PATH)/keylayout/Vendor_0957_Product_002d.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_002d.kl \
+    $(LOCAL_PATH)/keylayout/Vendor_0957_Product_0026.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_0026.kl \
+    $(LOCAL_PATH)/keylayout/Vendor_0957_Product_003f.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_003f.kl \
+    $(LOCAL_PATH)/keylayout/Vendor_0957_Product_0031.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_0031.kl
+
+## Netflix
+PRODUCT_PACKAGES += \
+    NetflixConfig \
+    OppenNetflixConfigOverlay
+
+## Platform
+TARGET_AMLOGIC_SOC := s4
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/broadcom/libbt
+    $(LOCAL_PATH)
 
-## Wi-Fi firmware
-include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
+## Wi-Fi
+TARGET_HAVE_WIFIHAL := false
 
 ## Inherit from the common tree product makefile
-$(call inherit-product, device/amlogic/g12-common/g12.mk)
+$(call inherit-product, device/amlogic/ne-common/ne.mk)
 
 ## Inherit from the proprietary files makefile
-$(call inherit-product, vendor/askey/deadpool/deadpool-vendor.mk)
+$(call inherit-product, vendor/amlogic/oppen/oppen-vendor.mk)
