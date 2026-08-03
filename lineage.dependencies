@@ -2,5 +2,13 @@
   {
     "repository": "android_device_amlogic_ne-common",
     "target_path": "device/amlogic/ne-common"
+  },
+  {
+    "repository": "android_kernel_amlogic_oppen-build",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/oppen-build"
+  },
+  {
+    "repository": "android_kernel_amlogic_realtek-drivers_8822cs",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/realtek-drivers/8822cs"
   }
 ]
