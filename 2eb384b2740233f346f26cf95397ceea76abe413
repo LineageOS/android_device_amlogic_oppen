@@ -16,6 +16,24 @@
       "message": "You erased my edits.",
       "revId": "2eb384b2740233f346f26cf95397ceea76abe413",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48335fe6_d28a1eed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-03T09:31:09Z",
+      "side": 1,
+      "message": "Restored",
+      "parentUuid": "a63ea678_8505f269",
+      "revId": "2eb384b2740233f346f26cf95397ceea76abe413",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
