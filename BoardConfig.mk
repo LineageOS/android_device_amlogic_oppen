@@ -9,7 +9,20 @@ DEVICE_PATH := device/amlogic/oppen
 TARGET_BOOTLOADER_BOARD_NAME := oppen
 
 ## DTB
+BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_DTB_NAME := s4_s905y4_ap222_drm
+TARGET_DTBO_NAME := android_overlay_dt
+
+## Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+TARGET_KERNEL_PLATFORM_TARGET := oppen
+TARGET_KERNEL_SOURCE := vendor/amlogic/oppen-build
+
+## Kernel modules
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_dlkm.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 1887436800
