@@ -1,0 +1,11 @@
+amlogic-hwspinlock.ko
+user_fault.ko
+gpio-regulator.ko
+aml_smmu.ko
+amlogic-input.ko
+amlogic-adc.ko
+amlogic-thermal.ko
+amlogic-usb.ko
+amlogic-irblaster.ko
+amlogic-phy-debug.ko
+amlogic-inphy.ko
