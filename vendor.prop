@@ -4,7 +4,7 @@
 #
 
 ## Bluetooth
-bluetooth.device.default_name=ADT-3
+bluetooth.device.default_name=Oppen
 bluetooth.profile.hfp.ag.enabled=false
 bluetooth.profile.opp.enabled=false
 bluetooth.profile.pbap.server.enabled=false
@@ -13,15 +13,12 @@ bluetooth.profile.pbap.server.enabled=false
 ro.frp.pst=/dev/block/by-name/frp
 
 # Dolby
-ro.vendor.platform.support.dolbyvision=false
-vendor.media.support.dolbyvision=false
+ro.vendor.platform.support.dolbyvision=true
+vendor.media.support.dolbyvision=true
 
 ## NRDP
-ro.vendor.nrdp.audio.mixer.buffersize=1024
-ro.vendor.nrdp.modelgroup=deadpool
+ro.vendor.nrdp.modelgroup=REFPLUSQLW4KS905Y4GTVBOXOTT
+ro.vendor.nrdp.oemmodel=onn_onn. 4K Streaming Box
 
 ## SOC
-ro.soc.model=AMLS905Y2
-
-## Wi-Fi
-vendor.bcm_wifi=bcm
+ro.soc.model=AMLS905Y4
