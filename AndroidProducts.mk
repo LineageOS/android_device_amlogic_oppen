@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_deadpool.mk
+    $(LOCAL_DIR)/lineage_oppen.mk
