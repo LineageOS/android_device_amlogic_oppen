@@ -3,39 +3,30 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/askey/deadpool
-
-## Bluetooth
-BOARD_HAVE_BLUETOOTH := true
+DEVICE_PATH := device/amlogic/oppen
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := deadpool
+TARGET_BOOTLOADER_BOARD_NAME := oppen
 
 ## DTB
-TARGET_DTB_NAME := g12a_s905y2_deadpool
-
-## Kernel modules
-TARGET_KERNEL_EXT_MODULES := \
-    dhd-driver/bcmdhd.101.10.361.x
+TARGET_DTB_NAME := s4_s905y4_ap222_drm
 
 ## Partitions
-BOARD_SUPER_PARTITION_SIZE := 2084569088
+BOARD_SUPER_PARTITION_SIZE := 1887436800
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 ## Wi-Fi
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-BOARD_WLAN_DEVICE := bcmdhd
+BOARD_WLAN_DEVICE := realtek
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_FW_PATH_AP := "/wifi/fw_bcm4356a2_ag_apsta.bin"
-WIFI_DRIVER_FW_PATH_STA := "/wifi/fw_bcm4356a2_ag.bin"
-WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_rtl
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
+WIFI_DRIVER_SOCKET_IFACE := wlan0
 
 ## Include the common tree BoardConfig makefile
-include device/amlogic/g12-common/BoardConfigCommon.mk
+include device/amlogic/ne-common/BoardConfigCommon.mk
 
 ## Include the proprietary BoardConfig makefile
-include vendor/askey/deadpool/BoardConfigVendor.mk
+include vendor/amlogic/oppen/BoardConfigVendor.mk
