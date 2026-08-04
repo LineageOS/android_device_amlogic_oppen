@@ -32,6 +32,10 @@ vendor/bin/hw/android.hardware.security.keymint-service.amlogic
 vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-no-rkp.amlogic.xml
+vendor/lib/lib_android_keymaster_keymint_utils.so:vendor/lib/lib_android_keymaster_akeymint_utils.so;FIX_SONAME
+vendor/lib/libcppcose_rkp.so:vendor/lib/libacppcose_rkp.so;FIX_SONAME
+vendor/lib/libkeymint.so:vendor/lib/libakeymint.so;FIX_SONAME
+vendor/lib/libkeymint_remote_prov_support.so:vendor/lib/libakeymint_remote_prov_support.so;FIX_SONAME
 
 ## TEE Applets
 vendor/lib/teetz/00d1ca22-1764-4e35-90aa-5b8c12630764.ta
