@@ -14,6 +14,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Vendor_0957_Product_003f.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_003f.kl \
     $(LOCAL_PATH)/keylayout/Vendor_0957_Product_0031.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0957_Product_0031.kl
 
+## Netflix
+PRODUCT_PACKAGES += \
+    NetflixConfig \
+    OppenNetflixConfigOverlay
+
 ## Platform
 TARGET_AMLOGIC_SOC := s4
 
