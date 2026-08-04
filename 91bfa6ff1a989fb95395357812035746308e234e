@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce1a8c0c_38e7db84",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 36466
+      },
+      "writtenOn": "2026-08-04T16:19:09Z",
+      "side": 1,
+      "message": "```suggestion\n* Our prebuilts rely on the V3-ndk lib, and the V4-ndk lib is\n```",
+      "range": {
+        "startLine": 9,
+        "startChar": 6,
+        "endLine": 9,
+        "endChar": 16
+      },
+      "revId": "91bfa6ff1a989fb95395357812035746308e234e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
