@@ -18,6 +18,10 @@ vendor/lib/libsecmem.so
 vendor/lib/firmware/aucpu_fw.bin
 vendor/lib/firmware/video/video_ucode.bin
 
+## Netflix
+product/etc/sysconfig/netflix.xml
+vendor/etc/permissions/droidlogic.software.netflix.xml
+
 ## OEM Lock
 vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic
 vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc
