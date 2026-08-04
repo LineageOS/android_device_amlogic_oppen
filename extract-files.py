@@ -25,6 +25,15 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.security.keymint-service.amlogic': blob_fixup()
+        .replace_needed('lib_android_keymaster_keymint_utils.so', 'lib_android_keymaster_akeymint_utils.so')
+        .replace_needed('libkeymint.so', 'libakeymint.so')
+        .replace_needed('libkeymint_remote_prov_support.so', 'libakeymint_remote_prov_support.so'),
+    'vendor/lib/libakeymint.so': blob_fixup()
+        .replace_needed('lib_android_keymaster_keymint_utils.so', 'lib_android_keymaster_akeymint_utils.so'),
+    'vendor/lib/libakeymint_remote_prov_support.so': blob_fixup()
+         .replace_needed('libcppcose_rkp.so', 'libacppcose_rkp.so')
+         .replace_needed('libbase.so', 'libbase-v33.so'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
