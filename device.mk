@@ -8,7 +8,7 @@ BOARD_HAVE_BLUETOOTH_RTK_TV := true
 include hardware/realtek/rtkbt/rtkbt.mk
 
 PRODUCT_PACKAGES += \
-    OppenBluetoothOverlay
+    BluetoothOverlayTarget
 
 ## Init-Files
 PRODUCT_COPY_FILES += \
@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
 ## Netflix
 PRODUCT_PACKAGES += \
     NetflixConfig \
-    OppenNetflixConfigOverlay
+    NetflixConfigOverlayTarget
 
 ## Platform
 TARGET_AMLOGIC_SOC := s4
