@@ -14,7 +14,6 @@ TARGET_DTB_NAME := s4_s905y4_ap222_drm
 TARGET_DTBO_NAME := android_overlay_dt
 
 ## Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.lz4
 TARGET_KERNEL_PLATFORM_TARGET := oppen
 TARGET_KERNEL_SOURCE := vendor/amlogic/oppen-build
 
