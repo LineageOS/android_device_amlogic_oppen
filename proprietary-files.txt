@@ -7,7 +7,7 @@ odm/lib/libHwAudio_dtshd.so
 
 ## Display
 vendor/etc/mesondisplay.cfg
-vendor/etc/mesondisplay.cfg:recovery/root/vendor/etc/mesondisplay.cfg
+vendor/etc/mesondisplay.cfg:recovery/root/system/etc/mesondisplay.cfg
 
 ## DRM
 vendor/lib/libamavutils.so
