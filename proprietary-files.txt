@@ -15,8 +15,8 @@ vendor/lib/liboemcrypto.so
 vendor/lib/libsecmem.so
 
 ## Firmware
-vendor/lib/firmware/aucpu_fw.bin
 vendor/lib/firmware/video/video_ucode.bin
+vendor/lib/firmware/aucpu_fw.bin
 
 ## Netflix
 product/etc/sysconfig/netflix.xml
