@@ -14,6 +14,9 @@ vendor/lib/libamavutils.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libsecmem.so
 
+## DVB
+vendor/etc/init/dvb.rc
+
 ## Firmware
 vendor/lib/firmware/video/video_ucode.bin
 vendor/lib/firmware/aucpu_fw.bin
